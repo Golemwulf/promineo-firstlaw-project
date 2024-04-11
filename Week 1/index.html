@@ -1,0 +1,116 @@
+<!--This section determine what type of document it is-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+<link rel="stylesheet" href="firstlaw.css">
+</head>
+<body>
+ <!--Custom nav bar for each of the pages. I put the links in a table to make it easier to read. I used the "border" expression to thicken the outside border-->
+   
+ <div>  
+        <nav>
+            <table class="nav">
+            <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="trilogy1.html">First Law Trilogy</a></td>
+            <td><a href="trilogy2.html">Standalones</a></td>
+            <td><a href="trilogy3.html">Age of Madness</a></td>
+            </tr>
+            </table>
+        </nav> 
+ </div> 
+    
+    <main>
+
+        <div class="banner">       
+            <h1>World of the First Law</h1>
+            
+            <!--I used a direct path for the image sources on this site. I also adjusted the width of the images for asthetics-->
+            <img src="./image/Heroes_Cover-wrap.webp" width="1600px" alt="fantasy art of a large battle" class="bannerpic">
+            <!--This page will summarize the first law series and introduce the author-->
+            <h4>The First Law is a fantasy series written by British author Joe Abercrombie. The First Law is the title of the original trilogy in the series, but is also used to refer to the series as a whole. The full series consists of a trilogy, three stand-alone novels, short stories, and a second trilogy, titled The Age of Madness, of which the third book was published in September 2021</h4>
+        </div>
+        <div class="Author">
+    <h2>Joe Abercrombie</h2>
+    <!--photo of the Author-->
+    <img src="image/Joe-Abercrombie.webp" width="600px" alt="Photo of Joe Abercrombie The author"><br>
+    <h3>About the Author</h3>
+    <p>Joe Abercrombie is a British fantasy writer and film editor. Before he pursued writing full time, he started work as a freelance TV editor. This job gave him lots of time off, and realising that he needed something more useful to do than playing video games, in 2001 he sat down once again to write an epic fantasy trilogy based around the misadventures of thinking man’s barbarian Logen Ninefingers. This time, having learned not to take himself too seriously in the six years since the first effort, the results were a great deal more interesting.</p>
+    <p>The Blade Itself, was completed in 2004. Following a heart-breaking trail of rejection at the hands of several of Britain’s foremost literary agencies, The First Law trilogy was snatched up by Gillian Redfearn of Gollancz in 2005 in a seven-figure deal (if you count the pence columns). A year later The Blade Itself was unleashed on an unsuspecting public. It now has publishers in thirty countries.  The sequels, Before They are Hanged and Last Argument of Kings were published in 2007 and 2008, when Joe was a finalist for the John W. Campbell award for best new writer.  Best Served Cold, a standalone book set in the same world, was published in June 2009, and a second standalone, The Heroes, came in January 2011 and made no. 3 on the Sunday Times Hardcover Bestseller List.  A third standalone, Red Country, was both a Sunday Times and New York Times Hardcover Bestseller in October 2012.</p>
+    
+        </div>
+<br>
+
+<!--This table was made to explain which books fit into which trilogy. I hyperlinked the header rows for convenience-->
+<div>
+    <h3>The Different Trilogies</h3>
+    <table class="trilogies">
+        <thead>
+            <tr>
+                <th><a href="trilogy1.html">First Law Trilogy</a></th>
+                <th><a href="trilogy2.html">Standalones</a></th>
+                <th><a href="trilogy3.html">Age of Madness</a></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>The Blade Itself</td>
+                <td>Best Served Cold</td>
+                <td>A Little Hatred</td>
+                
+            </tr>
+            <tr>
+                <td>Before They Are Hanged</td>
+                <td>Heroes</td>
+                <td>The Trouble with Peace</td>
+                
+            </tr>
+            <tr>
+                <td>Last Argument of Kings</td>
+                <td>Red Country</td>
+                <td>Wisdom Of the Crowds</td>
+            </tr>
+            <tr>
+            <td></td>
+            <td>Sharp Ends</td>
+            <td></td>
+        </tr>
+    </tbody>
+    </table>
+</div> <br><br>
+<div>
+    <!--added a form using radios and a text types to choose your favorite of the trilogies. Once you make your selection, you can enter your name and submit it.-->
+    <Form class="form">
+        <h4>Which trilogy is your favorite?</h4>
+        <input type="radio" name="favorite" value="trilogy1">First Law <br>
+        <input type="radio" name="favorite" value="trilogy2">Standalones <br>
+        <input type="radio" name="favorite" value="trilogy3">Age of Madness <br><br><br>
+        <label>First Name</label>
+        <input type="text" name="firstname" placeholder="First Name"> <br>
+        <label>Last Name</label>
+        <input type="text" name="lastname" placeholder="Last Name"> <br><br>
+        <button type="submit">Submit</button><br><br><br><br>
+    </Form>
+</div>
+
+<!--added the nav bar at the bottom of the page for convenience-->
+<div>
+    <nav>       
+        <table id="nav">
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="trilogy1.html">First Law Trilogy</a></td>
+                <td><a href="trilogy2.html">Standalones</a></td>
+                <td><a href="trilogy3.html">Age of Madness</a></td>
+            </tr>
+        </table>
+    </nav> 
+</div>
+</main>
+
+</body>
+</html>
