@@ -1,4 +1,187 @@
+
 body {
-    background-color: darkcyan;
-   
+        background: linear-gradient(#31313d,#5871b8,#c7532f) ;
 }
+
+main{
+    margin: 20px;
+}
+/*below is the nav bar. using a ul element gave more styling options.*/
+.nav ul {
+  list-style-type: none;
+  background-color: #31313d;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+/*below is for stylizing the link text specifically.  */
+.nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+/* below allows me to specify this new color when the mouse is hovering over it. */
+.nav a:hover{
+    background-color: #1e1e1f; 
+}
+/*The "float" allowed me to take the list full of the links and make it horizontal on the page. */
+.nav li{
+    float: left;    
+}
+
+/*navigation end*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 5px;
+}
+
+/*start of banner section*/
+
+/*Using flexbox gave me greater control over the stylizing options. I made centering and wrapping the images much easier*/
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.banner-pic {
+    width: 500px;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1rem 1rem 2rem black;
+    background-color: transparent;
+    
+}
+
+.banner p{
+    text-align: center;
+    color: rgb(224, 224, 224);
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* about the author section (only on index page)*/
+.author {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(224, 224, 224);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.author p{
+    text-align: center;
+    
+    font-size: 18px;
+}   
+
+
+
+/* "books" section for the rest of the pages*/
+
+.books{
+    color: rgb(224, 224, 224);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
+}
+
+.cover-pic{
+    
+    width: 350px;  
+}
+/*below is the table section for the home page. This will allow me to format and color the table.  */
+
+#trilogies {
+    padding: 1px;   
+}
+/* below targets only the h3 within the "trilogies" class and allowed me to stylize it separately from the table*/
+.trilogies h3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(224, 224, 224);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+#trilogies-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    color: rgb(224, 224, 224);;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    
+} 
+
+/* below determines the format for the rows and columns of my table. This overrides the previous target because it is more specific.*/
+#trilogies-table th, #trilogies-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#trilogies-table th {
+    background-color: rgb(49, 49, 61);
+    color: rgb(224, 224, 224);;
+}
+
+#trilogies-table a {
+    color: rgb(224, 224, 224);;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+/* using the pseudo target, I am able to get more granular with the targets. in this case, it allowed me to change the color of the middle column slightly to make the table easier to read*/
+#trilogies-table td:nth-child(even) {
+    background-color: rgb(70, 70, 70);
+}
+
+#trilogies-table th:nth-child(even) {
+    background-color: rgb(66, 66, 83);
+}
+
+#trilogies-table a:hover{
+    background-color: #1e1e1f; 
+    
+}
+
+/*form section for the first page*/
+
+#form {
+    background: linear-gradient(#1e1e1f, rgba(30, 30, 31, 0.5), transparent) ;
+    color: rgb(224, 224, 224);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#form h3 {
+    text-align: center;
+    color: rgb(224, 224, 224);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgb(73, 73, 73);
+}
+
+/*below is the footer*/
+footer {
+    color: white;
+    text-align: center;
+}
+
+
+ 
